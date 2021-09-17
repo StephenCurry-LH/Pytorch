@@ -30,7 +30,7 @@ class DiabetesDataset(Dataset):
 
 
 train_dataset = DiabetesDataset(Xtrain, Ytrain)
-train_loader = DataLoader(dataset=train_dataset, batch_size=32, shuffle=True, num_workers=1)  # num_workers 多线程
+train_loader = DataLoader(dataset=train_dataset, batch_size=32, shuffle=True, num_workers=0)  # num_workers 多线程
 
 
 # design model using class
